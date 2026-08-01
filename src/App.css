@@ -6,7 +6,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-  background: #f5f5f5;
+  background: #e8eef5;
   color: #333;
 }
 
@@ -307,13 +307,14 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(145deg, #667eea, #5568d3);
   color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
 .btn-secondary {
@@ -335,51 +336,40 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #e8eef5;
 }
 
 .home-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #e8eef5;
   padding: 80px 20px 60px;
   text-align: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 .home-content h1 {
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 12px;
   letter-spacing: -0.5px;
-}
-
-.tagline {
-  font-size: 20px;
-  opacity: 0.95;
-  margin-bottom: 20px;
-}
-
-.description {
-  font-size: 16px;
-  opacity: 0.85;
-  max-width: 600px;
-  margin: 0 auto 40px;
-  line-height: 1.6;
-}
-
-.home-header .btn-primary {
-  display: inline-block;
-  margin: 0 auto;
+  color: #2d3748;
 }
 
 .features {
   padding: 80px 20px;
-  background: white;
+  background: #e8eef5;
 }
 
 .features h2 {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
-  color: #333;
+  color: #2d3748;
+  font-weight: 600;
 }
 
 .features-grid {
@@ -392,15 +382,15 @@ body {
 
 .feature-card {
   padding: 30px;
-  border-radius: 12px;
-  background: #f9f9f9;
-  border: 1px solid #eee;
+  border-radius: 16px;
+  background: #e8eef5;
+  border: none;
+  box-shadow: 5px 5px 10px #d0dce8, -5px -5px 10px #ffffff;
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 16px #d0dce8, -8px -8px 16px #ffffff;
 }
 
 .feature-icon {
@@ -412,25 +402,27 @@ body {
 .feature-card h3 {
   font-size: 18px;
   margin-bottom: 12px;
-  color: #333;
+  color: #2d3748;
+  font-weight: 600;
 }
 
 .feature-card p {
   font-size: 14px;
-  color: #666;
+  color: #4a5568;
   line-height: 1.6;
 }
 
 .how-to {
   padding: 80px 20px;
-  background: #f5f5f5;
+  background: #e8eef5;
 }
 
 .how-to h2 {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
-  color: #333;
+  color: #2d3748;
+  font-weight: 600;
 }
 
 .steps {
@@ -440,48 +432,56 @@ body {
 }
 
 .steps li {
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 20px;
-  background: white;
-  border-left: 4px solid #667eea;
-  border-radius: 6px;
+  background: #e8eef5;
+  border-radius: 16px;
+  box-shadow: 5px 5px 10px #d0dce8, -5px -5px 10px #ffffff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.steps li:hover {
+  box-shadow: 8px 8px 16px #d0dce8, -8px -8px 16px #ffffff;
 }
 
 .steps strong {
   display: block;
   font-size: 18px;
   margin-bottom: 8px;
-  color: #333;
+  color: #2d3748;
+  font-weight: 600;
 }
 
 .steps p {
   font-size: 14px;
-  color: #666;
+  color: #4a5568;
   line-height: 1.6;
 }
 
 .home-footer {
   padding: 40px 20px;
-  background: #333;
-  color: white;
+  background: #e8eef5;
+  color: #4a5568;
   text-align: center;
   margin-top: auto;
 }
 
 .home-footer a {
-  color: #667eea;
+  color: #5a6b7f;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .home-footer a:hover {
-  text-decoration: underline;
+  color: #2d3748;
 }
 
 .copyright {
   margin-top: 16px;
   font-size: 12px;
-  opacity: 0.7;
+  color: #718096;
 }
 
 /* Responsive */

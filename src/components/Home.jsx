@@ -4,17 +4,33 @@ export default function Home({ onStart }) {
       <header className="home-header">
         <div className="home-content">
           <h1>マルチアングル画像PDFジェネレータ</h1>
-          <p className="tagline">CGモデルを複数の角度からPDFに変換</p>
-          <p className="description">
-            CGソフトで作成したモデルの複数角度画像を簡単にPDFやPNGに配置できるツールです。
-            クライアント提出用の資料作成を高速化します。
-          </p>
-
           <button className="btn btn-primary btn-large" onClick={onStart}>
             今すぐ始める
           </button>
         </div>
       </header>
+
+      <section className="how-to">
+        <h2>使い方</h2>
+        <ol className="steps">
+          <li>
+            <strong>画像を選択</strong>
+            <p>2枚、4枚、または8枚の画像をドラッグ&ドロップで選択</p>
+          </li>
+          <li>
+            <strong>レイアウトを選択</strong>
+            <p>複数のレイアウトパターンから、お好みのものを選択</p>
+          </li>
+          <li>
+            <strong>オプションを設定</strong>
+            <p>タイトルと日付（オプション）を入力</p>
+          </li>
+          <li>
+            <strong>ダウンロード</strong>
+            <p>PDF または PNG をダウンロード</p>
+          </li>
+        </ol>
+      </section>
 
       <section className="features">
         <h2>機能</h2>
@@ -57,31 +73,9 @@ export default function Home({ onStart }) {
         </div>
       </section>
 
-      <section className="how-to">
-        <h2>使い方</h2>
-        <ol className="steps">
-          <li>
-            <strong>画像を選択</strong>
-            <p>2枚、4枚、または8枚の画像をドラッグ&ドロップで選択</p>
-          </li>
-          <li>
-            <strong>レイアウトを選択</strong>
-            <p>複数のレイアウトパターンから、お好みのものを選択</p>
-          </li>
-          <li>
-            <strong>オプションを設定</strong>
-            <p>タイトルと日付（オプション）を入力</p>
-          </li>
-          <li>
-            <strong>ダウンロード</strong>
-            <p>PDF または PNG をダウンロード</p>
-          </li>
-        </ol>
-      </section>
-
       <footer className="home-footer">
         <p>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/t0rry/Gen_MultiAnglePDF" target="_blank" rel="noopener noreferrer">
             GitHub で見る
           </a>
         </p>

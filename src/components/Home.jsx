@@ -52,7 +52,7 @@ export default function Home({ onStart }) {
           <div className="feature-card">
             <EyeIcon />
             <h3>リアルタイムプレビュー</h3>
-            <p>配置を編集しながらプレビューを確認できます</p>
+            <p>配置のプレビューができます</p>
           </div>
 
           <div className="feature-card">
@@ -70,7 +70,7 @@ export default function Home({ onStart }) {
           <div className="feature-card">
             <HeartIcon />
             <h3>完全無料</h3>
-            <p>オープンソース。データはブラウザ内で処理されます</p>
+            <p>データはブラウザ内で処理されているため、サーバーにデータは送付されません</p>
           </div>
         </div>
       </section>

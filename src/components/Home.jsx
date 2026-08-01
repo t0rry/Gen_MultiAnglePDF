@@ -81,7 +81,7 @@ export default function Home({ onStart }) {
             GitHub で見る
           </a>
         </p>
-        <p className="copyright">© 2024 マルチアングル画像PDFジェネレータ</p>
+        <p className="copyright">© 2026 Hattori Kaoru</p>
       </footer>
     </div>
   )

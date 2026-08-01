@@ -1,3 +1,5 @@
+import { GridIcon, FileIcon, EyeIcon, TagIcon, ZapIcon, HeartIcon } from './Icons'
+
 export default function Home({ onStart }) {
   return (
     <div className="home-container">
@@ -36,37 +38,37 @@ export default function Home({ onStart }) {
         <h2>機能</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon">🖼️</div>
+            <GridIcon />
             <h3>複数レイアウト対応</h3>
             <p>2枚、4枚、8枚の画像に対応。複数の配置パターンから選択可能</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">📄</div>
+            <FileIcon />
             <h3>PDF/PNG出力</h3>
             <p>16:9アスペクト比で自動生成。PDFまたはPNG形式で出力</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">✨</div>
+            <EyeIcon />
             <h3>リアルタイムプレビュー</h3>
             <p>配置を編集しながらプレビューを確認できます</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">🏷️</div>
+            <TagIcon />
             <h3>メタデータ対応</h3>
             <p>タイトルと日付をオプションで追加。On/Off切り替え可能</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">⚡</div>
+            <ZapIcon />
             <h3>ブラウザで完結</h3>
             <p>インストール不要。ブラウザで画像を選択してすぐに生成</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">🆓</div>
+            <HeartIcon />
             <h3>完全無料</h3>
             <p>オープンソース。データはブラウザ内で処理されます</p>
           </div>

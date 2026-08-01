@@ -17,9 +17,10 @@ body {
 }
 
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #e8eef5;
+  color: #2d3748;
   padding: 40px 20px;
+  border-bottom: 1px solid #d0dce8;
 }
 
 .header-top {
@@ -33,28 +34,29 @@ body {
 .header h1 {
   font-size: 32px;
   margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .header p {
   font-size: 16px;
-  opacity: 0.9;
+  color: #5a6b7f;
 }
 
 .btn-home {
   padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 6px;
+  background: #e8eef5;
+  color: #5a6b7f;
+  border: none;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 3px 3px 8px #d0dce8, -3px -3px 8px #ffffff;
   transition: all 0.3s ease;
 }
 
 .btn-home:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: white;
+  box-shadow: 4px 4px 12px #d0dce8, -4px -4px 12px #ffffff;
 }
 
 .main-content {
@@ -143,28 +145,30 @@ body {
 }
 
 .preview-section {
-  background: white;
+  background: #e8eef5;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 5px 5px 10px #d0dce8, -5px -5px 10px #ffffff;
 }
 
 .preview-section h2 {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #333;
+  color: #2d3748;
+  font-weight: 600;
 }
 
 .preview-container {
   width: 100%;
   max-height: 600px;
   overflow: auto;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border: none;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f9f9f9;
+  background: #e8eef5;
+  box-shadow: inset 3px 3px 8px #d0dce8, inset -3px -3px 8px #ffffff;
 }
 
 .preview-image {
@@ -176,21 +180,22 @@ body {
 .preview-placeholder {
   padding: 40px;
   text-align: center;
-  color: #999;
+  color: #5a6b7f;
 }
 
 .settings-section {
-  background: white;
+  background: #e8eef5;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 5px 5px 10px #d0dce8, -5px -5px 10px #ffffff;
   height: fit-content;
 }
 
 .settings-section h2 {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #333;
+  color: #2d3748;
+  font-weight: 600;
 }
 
 .form-group {
@@ -207,7 +212,7 @@ body {
 .form-group label {
   font-size: 14px;
   font-weight: 500;
-  color: #555;
+  color: #2d3748;
 }
 
 .checkbox-label {
@@ -232,46 +237,48 @@ body {
 }
 
 .checkbox-label input[type="checkbox"]:checked + span {
-  color: #555;
+  color: #2d3748;
 }
 
 .checkbox-label input[type="checkbox"]:not(:checked) + span {
-  color: #ccc;
+  color: #a0aec0;
 }
 
 .btn-today {
-  padding: 4px 12px;
-  background: #e8f0ff;
-  color: #667eea;
-  border: 1px solid #667eea;
-  border-radius: 4px;
+  padding: 6px 14px;
+  background: #e8eef5;
+  color: #5a6b7f;
+  border: none;
+  border-radius: 6px;
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 2px 2px 5px #d0dce8, -2px -2px 5px #ffffff;
   transition: all 0.3s ease;
 }
 
 .btn-today:hover {
-  background: #667eea;
-  color: white;
+  box-shadow: 3px 3px 8px #d0dce8, -3px -3px 8px #ffffff;
 }
 
 .form-group input,
 .form-group select {
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  border: none;
+  border-radius: 8px;
   font-size: 14px;
   font-family: inherit;
-  transition: border-color 0.3s ease;
+  background: #e8eef5;
+  color: #2d3748;
+  box-shadow: inset 2px 2px 5px #d0dce8, inset -2px -2px 5px #ffffff;
+  transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  box-shadow: inset 3px 3px 8px #d0dce8, inset -3px -3px 8px #ffffff;
 }
 
 .form-group input:disabled,
@@ -393,10 +400,11 @@ body {
   box-shadow: 8px 8px 16px #d0dce8, -8px -8px 16px #ffffff;
 }
 
-.feature-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
+.feature-icon, .feature-card svg {
   display: block;
+  margin: 0 auto 16px;
+  width: 48px;
+  height: 48px;
 }
 
 .feature-card h3 {
